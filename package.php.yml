@@ -1,0 +1,46 @@
+name: jphp-udpsocket-ext
+version: 1.0.2
+
+plugins:
+- Hub
+- Doc
+- Gradle
+
+deps:
+  jphp-runtime: '*'
+
+devDeps:
+  jphp-core: '*'
+  dn-bundle-plugin: '*'
+
+
+
+config:
+  ignore:
+  - /sandbox/**
+  - /.idea/**
+  - /*.iml
+  - /.git/**
+  - /package.hub.yml
+  - /bundle/**
+  - /src-bundle/**
+  - /build
+  - /out/**
+  - /examples/**
+  - /screenshots/**
+  - /dn-sources/**
+  - /.gitignore
+  - /settings.gradle
+
+doc:
+  url-prefix: 'https://github.com/jphp-group/%name%/api-docs/'
+
+
+develnext-bundle:
+  version: 1.0.0
+  name: UDPSocket
+  author: broelik
+  icon: "develnext/bundle/udpsocket/icon32.png"
+  description: "Пакет для работы с UDP сокетами"
+  group: "network"
+  class: "develnext\\bundle\\udpsocket\\UDPSocketBundle"
